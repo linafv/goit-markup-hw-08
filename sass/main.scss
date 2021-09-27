@@ -1,0 +1,64 @@
+@import 'variables.scss';
+@import 'common.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'modal.scss';
+@import 'hero.scss';
+@import 'advantage.scss';
+@import 'about.scss';
+@import 'team.scss';
+@import 'clients.scss';
+@import 'portfolio.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: inherit;
+}
+textarea {
+  resize: none;
+}
+
+.section {
+  padding: 94px 0;
+  &.about {
+    padding-top: 0;
+  }
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}

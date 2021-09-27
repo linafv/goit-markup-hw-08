@@ -1,0 +1,43 @@
+.about {
+  // .about__list
+
+  &__list {
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  // .about__item
+
+  &__item {
+    padding: 0 15px;
+  }
+
+  // .about__overlay
+
+  &__overlay {
+    position: relative;
+  }
+
+  // .about__img
+
+  &__img {
+    flex: 0 0 370px;
+  }
+
+  // .about__title
+
+  &__title {
+    width: 370px;
+    height: 23.809%;
+    position: absolute;
+    bottom: 2.86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    background-color: var(--about-backdrop-color);
+  }
+}
