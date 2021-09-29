@@ -10,15 +10,29 @@
   &__list {
     margin: 0 -15px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-flow: row wrap;
+    }
   }
 
   // .advantage__item
 
   &__item {
     padding: 0 15px;
-    flex: 1 1 270px;
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        padding-bottom: 30px;
+      }
+    }
+    &:nth-child(-n + 2) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      flex: 1 1 270px;
+    }
   }
 
   // .advantage__icon-box
@@ -37,10 +51,14 @@
   &__header {
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
   }
 
   // .advantage__text
@@ -50,6 +68,4 @@
     line-height: 1.71;
     color: var(--sub-text-color);
   }
-}
-.icon {
 }
