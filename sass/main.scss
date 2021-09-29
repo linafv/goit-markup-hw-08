@@ -1,14 +1,14 @@
-@import 'variables.scss';
-@import 'common.scss';
-@import 'header.scss';
-@import 'footer.scss';
-@import 'modal.scss';
-@import 'hero.scss';
-@import 'advantage.scss';
-@import 'about.scss';
-@import 'team.scss';
-@import 'clients.scss';
-@import 'portfolio.scss';
+@import './utils/variables';
+@import './components/common';
+@import './components/header';
+@import './components/footer';
+@import './components/modal';
+@import './components/hero';
+@import './components/advantage';
+@import './components/about';
+@import './components/team';
+@import './components/clients';
+@import './components/portfolio';
 
 *,
 *::after,
@@ -53,12 +53,21 @@ textarea {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 100%;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
 }
