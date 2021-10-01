@@ -29,13 +29,13 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="./index.html">Студия</a>
+                <a class="nav__link nav__link--current" href="./index.html">Студия</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+                <a class="nav__link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link" href="#footer">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -43,7 +43,7 @@
           <ul class="header__comm">
             <li class="header__item">
               <a class="header__link" href="mailto:info@devstudio.com">
-                <svg class="mail-icon header__icon" height="12" width="16">
+                <svg class="mail-icon header__icon" height="10" width="14">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
                 info@devstudio.com
@@ -51,16 +51,67 @@
             </li>
             <li class="header__item">
               <a class="header__link" href="tel:+380961111111">
-                <svg class="phone-icon header__icon" height="16" width="10">
+                <svg class="phone-icon header__icon" height="14" width="10">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11
               </a>
             </li>
           </ul>
+          <button class="menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu-icon" height="16" width="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </header>
+
+      <div class="mob-menu js-menu-container" id="mobile-menu">
+        <button class="menu-close js-close-menu">
+          <svg class="mob-menu__icon" height="18.67" width="18.67">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="mob-menu-top">
+          <ul class="mob-menu__nav-list">
+            <li class="mob-menu__nav-list-item">
+              <a class="mob-menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-menu__nav-list-item">
+              <a class="mob-menu__link mob-menu__link--current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu__nav-list-item">
+              <a class="mob-menu__link" href="#footer">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu-bottom">
+          <ul class="mob-menu__contact-list">
+            <li class="mob-menu__contact-list-item">
+              <a class="mob-menu__link mob-menu__link--tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-menu__contact-list-item mob-menu__contact-list-item--mail">
+              <a class="mob-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-menu__social-list">
+            <li class="mob-menu__social-list-item">
+              <a class="mob-menu__link" href="#" target="_blank">Instagram</a>
+            </li>
+            <li class="mob-menu__social-list-item">
+              <a class="mob-menu__link" href="#" target="_blank">Twitter</a>
+            </li>
+            <li class="mob-menu__social-list-item">
+              <a class="mob-menu__link" href="#" target="_blank">Facebook</a>
+            </li>
+            <li class="mob-menu__social-list-item">
+              <a class="mob-menu__link" href="#" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
     <main class="portfolio section">
       <div class="container">
