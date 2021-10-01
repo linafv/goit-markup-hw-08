@@ -1,12 +1,12 @@
 .header {
   padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
   @media screen and (min-width: 768px) {
     padding: 21px 0;
   }
   @media screen and (min-width: 1200px) {
     padding: 25px 0;
   }
-  border-bottom: 1px solid var(--border-color);
   // .header__inner
 
   &__inner {
