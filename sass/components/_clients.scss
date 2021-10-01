@@ -2,6 +2,7 @@
   // .clients__list
 
   &__list {
+    margin: -15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -12,7 +13,7 @@
 
   // .clients__item
   &__item {
-    margin-bottom: 30px;
+    padding: 15px 0;
   }
 
   // .clients__link
