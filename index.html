@@ -65,45 +65,52 @@
           </button>
         </div>
       </div>
+
       <div class="mob-menu js-menu-container" id="mobile-menu">
         <button class="menu-close js-close-menu">
           <svg class="mob-menu__icon" height="18.67" width="18.67">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <ul class="mob-menu__nav-list">
-          <li class="mob-menu__item">
-            <a class="mob-menu__link nav__link--current" href="./index.html">Студия</a>
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="mob-menu__contact-list">
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="mob-menu__social-list">
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#">Instagram</a>
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#">Twitter</a>
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#">Facebook</a>
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#">LinkedIn</a>
-          </li>
-        </ul>
+        <div class="mob-menu-top">
+          <ul class="mob-menu__nav-list">
+            <li class="mob-menu__nav-list-item">
+              <a class="mob-menu__link mob-menu__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-menu__nav-list-item">
+              <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu__nav-list-item">
+              <a class="mob-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu-bottom">
+          <ul class="mob-menu__contact-list">
+            <li class="mob-menu__contact-list-item">
+              <a class="mob-menu__link mob-menu__link--tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-menu__contact-list-item mob-menu__contact-list-item--mail">
+              <a class="mob-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-menu__social-list">
+            <li class="mob-menu__social-list-item">
+              <a class="mob-menu__link" href="#" target="_blank">Instagram</a>
+            </li>
+            <li class="mob-menu__social-list-item">
+              <a class="mob-menu__link" href="#" target="_blank">Twitter</a>
+            </li>
+            <li class="mob-menu__social-list-item">
+              <a class="mob-menu__link" href="#" target="_blank">Facebook</a>
+            </li>
+            <li class="mob-menu__social-list-item">
+              <a class="mob-menu__link" href="#" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -584,12 +591,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+
     <script src="./js/mob-menu.js"></script>
   </body>
 </html>
