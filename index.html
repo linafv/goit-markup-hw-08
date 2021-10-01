@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="header__logo logo" href="./index.html" lang="en"
@@ -58,9 +58,54 @@
               </a>
             </li>
           </ul>
+          <button class="menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu-icon" height="16" width="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </header> -->
+      <div class="mob-menu js-menu-container" id="mobile-menu">
+        <button class="menu-close js-close-menu">
+          <svg class="mob-menu__icon" height="18.67" width="18.67">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu__nav-list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link nav__link--current" href="./index.html">Студия</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mob-menu__contact-list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+          </li>
+        </ul>
+        <ul class="mob-menu__social-list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#"> Instagram </a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#"> Twitter </a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#"> Facebook </a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#"> LinkedIn </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main class="main">
       <section class="hero">
