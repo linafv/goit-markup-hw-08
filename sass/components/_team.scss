@@ -10,8 +10,6 @@
     @media screen and (min-width: 768px) {
       justify-content: space-between;
     }
-    @media screen and (min-width: 1200px) {
-    }
   }
 
   // .team__item
@@ -26,7 +24,8 @@
   // .team__img
 
   &__img {
-    // flex: 0 0 270px;
+    width: 100%;
+    height: auto;
   }
 
   // .team__content
